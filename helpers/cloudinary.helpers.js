@@ -11,7 +11,7 @@ export const uploadToCloudinary = (buffer, options = {}) => {
   return new Promise((resolve, reject) => {
     const uploadStream = cloudinary.uploader.upload_stream(
       {
-        folder: "character-log-system-profile_pic", // Folder where files will be saved in cloudinary
+        folder: "record-keeping-system-profile_pic", // Folder where files will be saved in cloudinary
         resource_type: "auto",
         ...options,
       },
