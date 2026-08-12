@@ -6,6 +6,7 @@ const upload = multer({
     const allowed = [
       "image/jpeg", // JPG
       "image/png", // PNG
+      "image/webp", // WEBP
       "application/pdf", // PDF
       "application/vnd.openxmlformats-officedocument.wordprocessingml.document", // DOCX,
       "application/msword", // DOC
