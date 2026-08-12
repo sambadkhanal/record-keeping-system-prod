@@ -8,7 +8,6 @@ const schema = mongoose.Schema(
       unique: true, // No two documents in mongodb can have same name
       required: true,
     },
-    age: Number,
     gender: {
       type: String,
       default: "Male",
