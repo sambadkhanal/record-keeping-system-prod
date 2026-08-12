@@ -103,11 +103,10 @@ export const getRecords = async (req, res) => {
 
 export const createRecord = async (req, res) => {
   try {
-    const { name, age, gender, race, class_system, is_npc } = req.body;
+    const { name, gender, race, class_system, is_npc } = req.body;
 
     if (
       !name ||
-      !age ||
       !gender ||
       !race ||
       !class_system ||
@@ -125,7 +124,6 @@ export const createRecord = async (req, res) => {
 
     const createdRecord = await Record.create({
       name,
-      age: Number(age),
       gender,
       race,
       class_system,
